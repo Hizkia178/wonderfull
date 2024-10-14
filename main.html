@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Wonderfull Wakanda</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class='active'><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#shop"><i class="fas fa-store"></i> Shop</a></li>
+            <li class="profile-card">
+                <a href="#" class="profile-link">
+                    <img src="Emily Johnson.png" alt="Emily Johnson">
+                    <span>My Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section id='home' class='home'>
+        <div class="home-content">
+            <h2>Explore the Wonders of Indonesia</h2>
+            <p>
+                Indonesia, the land of thousands of islands, offers breathtaking landscapes, diverse cultures, and rich
+                history.
+                From the pristine beaches of Bali to the cultural heritage of Yogyakarta, and the exotic wildlife in
+                Sumatra—Indonesia
+                is a paradise for travelers. Discover the beauty, warmth, and adventure that await you in this
+                remarkable country!
+            </p>
+            <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-arrow-down"></i> Learn More
+            </button>
+        </div>
+    </section>
+
+<section id="about" class="about">
+    <div class="about-content">
+        <h2>Unearth the Wonders of Indonesia’s Hidden Gems</h2>
+        <p>
+            Indonesia, an enchanting archipelago made up of over 17,000 islands, offers a tapestry of stunning
+            landscapes, rich culture, and diverse wildlife. Every region brims with unique adventures, inviting you to
+            dive deep into its breathtaking beauty. Explore these remarkable destinations that embody Indonesia's
+            allure:
+        </p>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <img src="img/bali.jpg" alt="Bali Beach Sunset" class="destination-image">
+                <h3>Bali</h3>
+                <i class="fas fa-sun"></i>
+                <p>Venture beyond the famous beaches to discover tranquil rice terraces and sacred temples in Bali's
+                    lush hinterlands. Experience the vibrant arts scene in Ubud, where creativity flourishes.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/yogya.jpg" alt="Yogyakarta" class="destination-image">
+                <h3>Yogyakarta</h3>
+                <i class="fas fa-paint-brush"></i>
+                <p>Immerse yourself in Javanese culture in Yogyakarta, home to the majestic Borobudur and Prambanan
+                    temples. Engage in local crafts through batik workshops and witness captivating gamelan
+                    performances.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/raja-ampat.jpg" alt="Raja Ampat" class="destination-image">
+                <h3>Raja Ampat</h3>
+                <i class="fas fa-water"></i>
+                <p>Known for its unparalleled biodiversity, Raja Ampat is a haven for nature lovers. Dive into pristine
+                    coral reefs or hike to breathtaking viewpoints that showcase the archipelago's dramatic beauty.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/komodo.jpg" alt="Komodo National Park" class="destination-image">
+                <h3>Komodo National Park</h3>
+                <i class="fas fa-dragon"></i>
+                <p>Encounter the legendary Komodo Dragons in their natural habitat while exploring hidden beaches and
+                    vibrant underwater ecosystems, perfect for snorkeling and diving adventures.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/lombok.jpg" alt="Lombok" class="destination-image">
+                <h3>Lombok</h3>
+                <i class="fas fa-mountain"></i>
+                <p>Relax on Lombok's pristine beaches or hike to the summit of Mount Rinjani for unforgettable sunrise
+                    views. Experience the rich Sasak culture and savor delicious traditional dishes.</p>
+            </div>
+            <div class="destination-card">
+                <img src="img/sumatra.jpg" alt="Sumatra" class="destination-image">
+                <h3>Sumatra</h3>
+                <i class="fas fa-tree"></i>
+                <p>Explore the lush rainforests and diverse wildlife of Sumatra. Trek to spot orangutans in their
+                    natural habitat or unwind by Lake Toba, the world's largest volcanic lake.</p>
+            </div>
+        </div>
+        <p>
+            Each destination reveals its own unique story, offering unforgettable experiences for every traveler.
+            Whether you're in search of serene beaches, rich cultural heritage, or thrilling adventures, Indonesia is a
+            captivating paradise waiting for you to explore!
+        </p>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <div class="contact-content">
+        <h2>Get in Touch</h2>
+        <p>
+            We would love to hear from you! Whether you have questions about the destinations, need travel tips, or want
+            to share your own experiences, feel free to reach out. Our team is here to assist you in planning your
+            unforgettable journey through Indonesia!
+        </p>
+        <div class="contact-details">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>For inquiries, please reach out at <a
+                        href="mailto:info@wonderfullwakanda.com">info@wonderfullwakanda.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>Have a quick question? Call us at <a href="tel:+123456789">+1 234 567 89</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Visit Us</h3>
+                <p>Come say hi! We’re located at Jl. Kesehatan No. 123, Jakarta, Indonesia.</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="travel-tips">
+            <h3>Travel Tips</h3>
+            <ul>
+                <li>Always check visa requirements before traveling.</li>
+                <li>Try local foods for an authentic experience.</li>
+                <li>Respect local customs and traditions.</li>
+                <li>Stay hydrated and protect yourself from the sun.</li>
+                <li>Always keep emergency numbers handy.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section id="shop" class="shop">
+    <div class="shop-content">
+        <h2>Bring Home the Magic of Indonesia</h2>
+        <p>Explore our curated collection of locally crafted goods, inspired by the vibrant cultures, stunning
+            landscapes, and timeless traditions of Indonesia. Each item tells a story, allowing you to take a piece of
+            Indonesia's wonders with you.</p>
+
+        <div class="shop-categories">
+            <div class="shop-category">
+                <img src="sub-img/batik.jpg" alt="Handcrafted Batik Fabric" class="shop-image">
+                <h3>Exquisite Batik</h3>
+                <p>Discover the art of Batik, Indonesia’s traditional fabric, with patterns that symbolize nature, life,
+                    and spirituality. Perfect as scarves, clothing, or home décor.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/jewelry.jpg" alt="Bali Silver Jewelry" class="shop-image">
+                <h3>Bali Silver Jewelry</h3>
+                <p>Adorn yourself with handcrafted silver jewelry from Bali, known for its intricate designs that blend
+                    nature’s beauty with Balinese craftsmanship.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/lombok bags.jpg" alt="Lombok Rattan Bag" class="shop-image">
+                <h3>Lombok Rattan Bags</h3>
+                <p>Carry a piece of Lombok with you! Our eco-friendly, handmade rattan bags are stylish, sustainable,
+                    and a must-have accessory for any traveler.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/komodo sculp.jpg" alt="Komodo Dragon Sculpture" class="shop-image">
+                <h3>Komodo Dragon Sculptures</h3>
+                <p>Own a miniature version of Indonesia’s legendary Komodo Dragon. These wooden sculptures are
+                    skillfully carved by local artisans from sustainable materials.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/coffe.jpg" alt="Sumatra Coffee Beans" class="shop-image">
+                <h3>Sumatra Coffee</h3>
+                <p>Savor the bold, earthy flavors of Sumatra’s world-renowned coffee. Ethically sourced from local
+                    farmers, this rich coffee will remind you of Indonesia’s lush rainforests.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <!-- Add more shop items -->
+            <div class="shop-category">
+                <img src="sub-img/balinese.jpg" alt="Balinese Sculpture" class="shop-image">
+                <h3>Balinese Sculptures</h3>
+                <p>Take home a beautifully hand-carved Balinese wooden sculpture, inspired by the island's mythology and
+                    spirituality.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/spices.jpg" alt="Indonesian Spices" class="shop-image">
+                <h3>Indonesian Spices</h3>
+                <p>Bring the flavors of Indonesia into your kitchen with a selection of exotic spices, sourced directly
+                    from local farmers.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+            <div class="shop-category">
+                <img src="sub-img/box.jpg" alt="Handcrafted Jewelry Box" class="shop-image">
+                <h3>Handcrafted Jewelry Boxes</h3>
+                <p>Store your treasures in beautifully crafted wooden jewelry boxes from Java, each with intricate
+                    carvings and design.</p>
+                <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="shop-highlight">
+            <h3>Featured Product: Artisanal Masks from Yogyakarta</h3>
+            <p>These hand-painted wooden masks, crafted in Yogyakarta, are a unique representation of Indonesia’s
+                vibrant theater tradition. Display them in your home as a symbol of cultural richness and history.</p>
+            <img src="sub-img/mask.jpg" alt="Yogyakarta Mask" class="shop-highlight-image">
+            <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section">
+            <h3>About Wonderfull Wakanda</h3>
+            <p>
+                Discover the beauty and culture of Indonesia through our curated experiences and products. We aim to
+                bring you closer to Indonesia’s hidden gems and vibrant traditions.
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                <li><a href="#shop"><i class="fas fa-chevron-right"></i> Shop</a></li>
+                <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Jl. Kesehatan No. 123, Jakarta, Indonesia
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+123456789">+1 234 567 89</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@wonderfullwakanda.com">info@wonderfullwakanda.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Section (Optional) -->
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter to receive the latest updates and exclusive offers.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Wonderfull Wakanda. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
